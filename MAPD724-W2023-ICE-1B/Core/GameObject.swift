@@ -49,7 +49,7 @@ class GameObject : SKSpriteNode, GameProtocol{
         <#code#>
     }
     
-    func Resent() {
+    func Reset() {
         <#code#>
     }
     

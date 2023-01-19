@@ -5,6 +5,6 @@ protocol GameProtocol{
     
     func CheckBound()
     
-    func Resent()
+    func Reset()
     
 }
