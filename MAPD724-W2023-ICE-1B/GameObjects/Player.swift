@@ -23,20 +23,17 @@ class Player : GameObject{
     }
     
     override func CheckBound() {
-        //if (position.y <= -2107){
-        //    Reset()
-        //}
         
         //left boundary
-        if (position.x <= -310){
-            position.x = -310
+        if (position.x <= -255){
+            position.x = -255
         }
         
-        if (position.x <= 310){
-            position.x = 310
-        }
         //right boundary
         
+        if (position.x >= 255){
+            position.x = 255
+        }
         
     }
     

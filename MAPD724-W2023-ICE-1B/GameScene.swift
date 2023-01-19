@@ -1,6 +1,10 @@
 import SpriteKit
 import GameplayKit
 
+let screenSize = UIScreen.main.bounds
+var screenWidth: CGFloat?
+var screenHight: CGFloat?
+
 class GameScene: SKScene
 {
     
@@ -10,6 +14,11 @@ class GameScene: SKScene
     
     override func sceneDidLoad()
     {
+        screenWidth = screenSize.width
+        screenHight = screenSize.height
+        print("Screen bounds: width\(String(describing: screenWidth)) & height\(String(describing: screenHight))")
+        name = "GAME"
+        
         //first ocean
         ocean1 = Ocean()
         ocean1?.Reset()
@@ -62,5 +71,6 @@ class GameScene: SKScene
     {
         ocean1?.Update()
         ocean2?.Update()
+        player?.Update()
     }
 }
