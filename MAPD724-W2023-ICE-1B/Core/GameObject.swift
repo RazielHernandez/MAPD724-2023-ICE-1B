@@ -38,19 +38,19 @@ class GameObject : SKSpriteNode, GameProtocol{
     }
     
     func Start() {
-        <#code#>
+        
     }
     
     func Update() {
-        <#code#>
+        
     }
     
     func CheckBound() {
-        <#code#>
+        
     }
     
     func Reset() {
-        <#code#>
+        
     }
     
 }

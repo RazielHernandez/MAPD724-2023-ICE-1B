@@ -3,9 +3,20 @@ import GameplayKit
 
 class GameScene: SKScene
 {
+    
+    var ocean1: Ocean?
+    var ocean2: Ocean?
+    
     override func sceneDidLoad()
     {
-
+        //first ocean
+        ocean1 = Ocean()
+        ocean1?.Reset()
+        addChild(ocean1!)
+        //second ocean
+        ocean2 = Ocean()
+        ocean2?.position.y = -773
+        addChild(ocean2!)
     }
     
     func touchDown(atPoint pos : CGPoint)
@@ -44,6 +55,7 @@ class GameScene: SKScene
     
     override func update(_ currentTime: TimeInterval)
     {
-
+        ocean1?.Update()
+        ocean2?.Update()
     }
 }
